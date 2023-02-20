@@ -1,0 +1,28 @@
+{% extends 'layouts.html' %}
+
+
+{% block body %}
+<h1 class="content"> Register </h1>
+<h3 class="content">Use the following form to register for a student organization</h3>
+
+<div class="content">
+    <form method="post" action="register">
+        <input type="text" class="input-group" name="name" />
+        <div class="input-group mb-3">
+
+            <select class="form-select" name="organization">
+                <option selected>Choose An Organization...</option>
+                <option value="Game Development">Game Development</option>
+                <option value="Student Government">Student Government</option>
+                <option value="Black Student Union">Black Student Union</option>
+                <option value="Cross Country">Cross Country</option>
+                <option value="Chess Club">Chess Club</option>
+            </select>
+
+        </div>
+        <button class="btn btn-primary" type="submit">Register</button>
+    </form>
+</div>
+
+
+{% endblock %}
