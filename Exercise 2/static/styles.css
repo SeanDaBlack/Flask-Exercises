@@ -1,0 +1,21 @@
+.content {
+    display: flex;
+    justify-content: center;
+}
+
+div input {
+    width: 2rem;
+    margin-top: 2rem;
+    /* max-width: 25%; */
+    justify-self: center;
+}
+
+form {
+    display: grid;
+}
+
+div button {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}

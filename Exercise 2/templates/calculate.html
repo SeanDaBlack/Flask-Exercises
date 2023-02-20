@@ -1,0 +1,26 @@
+{% extends 'layouts.html' %}
+
+
+{% block body %}
+<h1 class="content">Calculate</h1>
+
+{% if number=='' %}
+
+<h3 class="content"> No Number Provided </h3>
+
+{% elif not number.isnumeric() %}
+<h3 class="content"> {{ number }} is not a number </h3>
+{% else %}
+
+    {% if is_even %}
+    <h3 class="content"> {{ number }} is even </h3>
+
+    {% else %}
+    <h3 class="content"> {{ number }} is odd </h3>
+    {%endif%}
+
+{% endif %}
+
+<a class='content' href="/">Go Back</a>
+
+{% endblock %}

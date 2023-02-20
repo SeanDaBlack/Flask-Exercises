@@ -1,0 +1,17 @@
+{% extends 'layouts.html' %}
+
+
+{% block body %}
+<h1 class="content"> Home </h1>
+<h3 class="content">Enter an integer to find out if it's even or odd</h3>
+
+<div class="content">
+    <form method="get" action="calculate">
+        <input type="text" class="input-group" name="number"></input>
+        <br>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+</div>
+
+
+{% endblock %}
